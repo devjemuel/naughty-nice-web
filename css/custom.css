@@ -1,2 +1,143 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
+
+div.shake-image > img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+div.circle-image-right > img {
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* width: 120px;
+    height: 120px; */
+    /* margin:-60px 0 0 -60px; */
+    -webkit-animation:spin-clockwise 10s linear infinite;
+    -moz-animation:spin-clockwise 10s linear infinite;
+    animation:spin-clockwise 10s linear infinite;
+}
+
+div.circle-image-right.delay-1sec > img {
+    animation-delay: 1s;
+}
+
+div.circle-image-right.delay-2sec > img {
+    animation-delay: 2s;
+}
+
+div.circle-image-right.delay-3sec > img {
+    animation-delay: 3s;
+}
+
+div.circle-image-left > img {
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* width: 120px;
+    height: 120px; */
+    /* margin:-60px 0 0 -60px; */
+    -webkit-animation:spin-counterclockwise 10s linear infinite;
+    -moz-animation:spin-counterclockwise 10s linear infinite;
+    animation:spin-counterclockwise 10s linear infinite;
+}
+
+div.circle-image-left.delay-1sec > img {
+    animation-delay: 1s;
+}
+
+div.circle-image-left.delay-2sec > img {
+    animation-delay: 2s;
+}
+
+div.circle-image-left.delay-3sec > img {
+    animation-delay: 3s;
+}
+
+
+
+@-moz-keyframes spin-clockwise { 
+    50% {
+        -webkit-transform: rotate(90deg);
+        transform:rotate(90deg);
+    } 
+
+    100% {
+        -webkit-transform: rotate(-90deg);
+        transform:rotate(-90deg);
+    }
+ }
+@-webkit-keyframes spin-clockwise { 
+    50% {
+        -webkit-transform: rotate(90deg);
+        transform:rotate(90deg);
+    } 
+
+    100% {
+        -webkit-transform: rotate(-90deg);
+        transform:rotate(-90deg);
+    }
+ }
+@keyframes spin-clockwise {
+    50% {
+        -webkit-transform: rotate(90deg);
+        transform:rotate(90deg);
+    } 
+
+    100% {
+        -webkit-transform: rotate(-90deg);
+        transform:rotate(-90deg);
+    }
+}
+
+@-moz-keyframes spin-counterclockwise { 
+    50% {
+        -webkit-transform: rotate(-90deg);
+        transform:rotate(-90deg);
+    } 
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform:rotate(90deg);
+    }
+ }
+@-webkit-keyframes spin-counterclockwise { 
+    50% {
+        -webkit-transform: rotate(-90deg);
+        transform:rotate(-90deg);
+    } 
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform:rotate(90deg);
+    }
+ }
+@keyframes spin-counterclockwise { 
+    50% {
+        -webkit-transform: rotate(-90deg);
+        transform:rotate(-90deg);
+    } 
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform:rotate(90deg);
+    }
+ }
